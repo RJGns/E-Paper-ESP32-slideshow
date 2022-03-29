@@ -2,7 +2,7 @@
 
 Utility tool for WaveShare's e-paper modules. It can convert any jpg, bmp or png to binary, hexadecimal array or directly to a fully usable cpp file with header.
 
-# How it's working?
+## How it's working?
 
 I made this tool specifically for my 2.9" WaveShare's e-paper module. This display cannot work with normal image data, you must convert your image file into a single dimensional hexadecimal array format. The following two step required to achieve this:
 
@@ -10,7 +10,7 @@ First you need to convert all the picture's pixels into a binary array. (Black d
 
 When this conversion done, you may send the output array of hexadecimal chars directly to the module. Important to note, that when you send your picture, you must fill all the screen! If you only send half the size, the rest of the display will be filled with random pixels. (unless this is what you want, then feel free to do it! :) ) So when you set the display dimensions in the options file, you must be precise! The converter fill the remaining spaces with empty data, if the pictures size not entirelly fill the screen.
 
-# Installation
+## Installation
 
 You can install this package from npm.
 
@@ -18,11 +18,11 @@ You can install this package from npm.
 npm i image_to_epaper_converter
 ```
 
-# Usage
+## Usage
 
 It can be used from console or as a node package. If you choose to use it in the console, you must set all the options in a json file. (the project has a default one with all the available attributes as defaults. You can find it under the options folder)
 
-## From console:
+### From console:
 
 ```bash
 node standalone
@@ -34,7 +34,7 @@ You can provide a different options file with the 'options_path' param:
 node standalone =./options/other.json
 ```
 
-## From nodejs:
+### From nodejs:
 
 In a nodejs project you must pass the options as a javascript object:
 
@@ -78,7 +78,7 @@ console.log({
 });
 ```
 
-## Available option parameters:
+### Available option parameters:
 
 - source_stream: A stream instance which contains the image. If this option is not provided, the script will use the source_file instead!
 - source_file: The picture's absolute path (or relative to the project), the extension has to be either bmp, jpg, jpeg or png. Only used if source_stream is not given!
@@ -120,7 +120,7 @@ console.log({
      - fit: Available options are: crop, pad, same
      - padcolor: You can specify the empty pads color. The color is an object, with 4 attributes: r, g, b, a (red, green, blue, alpha).
 
-## Tasks:
+### Tasks:
 
 When you use this converter, you must choose from atleast one of these following tasks:
 
@@ -130,7 +130,7 @@ When you use this converter, you must choose from atleast one of these following
 
 Before running any task, the image transformations are applied to your input image file.
 
-### binary
+#### binary
 
 This task converts your picture into a two-dimensional binary array. The following simple formula used for the pixel-to-binary conversion:
 
@@ -201,7 +201,7 @@ Both files created under the given target folder. The file's base name can be se
 }
 ```
 
-# Need more informations?
+## Need more informations?
 
 If you need more informations are help to use this tool with your e-paper module, feel free to contact me! I'll upload my own version of the official e-paper cpp library later in a different repository and link it here.
 
