@@ -1,9 +1,9 @@
-// Proceduraly generated file, please do not edit it directly!
+//Shrek
 
-#include "ImageData.h"
+#include "ImagesData.h"
 
 
-const unsigned char PICTURE[] = {
+const unsigned char ShrekImg[] = {
   0XFF, 0XFF, 0XFF, 0XFF, 0XFC, 0X00, 0X00, 0X01,
   0X2A, 0XAA, 0XAA, 0XB6, 0XED, 0X7F, 0XFF, 0XFF,
   0XFD, 0X55, 0X55, 0X55, 0X55, 0X55, 0X55, 0X55,

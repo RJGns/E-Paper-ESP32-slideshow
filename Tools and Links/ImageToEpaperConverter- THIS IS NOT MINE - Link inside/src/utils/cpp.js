@@ -27,10 +27,10 @@ function createCMainContent(hexaPixelArray, options) {
 
 	headerContent += '// Proceduraly generated file, please do not edit it directly!\n\n';
 	headerContent += '#include "' + cppFileName + '.h"\n';
-	headerContent += '#include <avr/pgmspace.h>\n';
+	
 	headerContent += '\n';
 	headerContent += 'const unsigned char ';
-	headerContent += optionsUtils.get(options, optionsUtils.OPTION_KEYS.CPP_VARIABLE_NAME) + '[] PROGMEM = {\n';
+	headerContent += optionsUtils.get(options, optionsUtils.OPTION_KEYS.CPP_VARIABLE_NAME) + '[] {\n';
 
 	let part,
 		remainingElementPcs = hexaPixelArray.length % ARRAY_ELEMENT_PER_ROW,
