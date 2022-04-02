@@ -1,5 +1,5 @@
 # E-Paper-ESP32-slideshow
-A simple Arduino program to cycle through images on an ESP32 microcontroller. Uses an E-paper display and ESP32 E-paper driver board from Waveshare. This project will only work with this board as it uses libraries from Waveshare to function. Based on a modified example from Waveshare. [Also includes a JPEG to HEX converter specifically for this product line.](https://github.com/Wh1teRabbitHU/ImageToEpaperConverter). It was not made by me, credit goes to [WhiteRabbit](https://github.com/Wh1teRabbitHU).
+A simple Arduino program to cycle through images on an ESP32 microcontroller. Uses an E-paper display and ESP32 E-paper driver board from Waveshare. This project will only work with this board as it uses libraries from Waveshare to function. Based on a modified example from Waveshare. [Also includes a JPEG to HEX converter specifically for this product line.](https://github.com/Wh1teRabbitHU/ImageToEpaperConverter). Converter was not made by me, credit goes to [WhiteRabbit](https://github.com/Wh1teRabbitHU).
 ## Set-up
 ### Applying dithering and re-scaling
 This requires Adobe Photoshop. Other imaging editing tools will probably work, it's just what I used. All it's needed for is to change the resolution to your screen size and set the colour table for dithering purposes.
