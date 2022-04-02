@@ -37,7 +37,7 @@ It should appear as a tab.
 ![image](https://user-images.githubusercontent.com/64732379/161355725-ba1aacc4-79b2-44fa-b6e3-64b49d1b3ca3.png)
 -> <br/>
 ![image](https://user-images.githubusercontent.com/64732379/161356025-cbaf47d7-571b-4aaa-af4b-e42e9e307f35.png)
-#### Then in the ImagesData**.h** tab, add ```extern const unsigned char (YourPictureName)[];```
+#### Then in the ImagesData **.h** tab, add ```extern const unsigned char (YourPictureName)[];```
 ![image](https://user-images.githubusercontent.com/64732379/161355862-e838c984-24f0-4ade-8a27-8a003d29c4c9.png)
 #### If you are reading this then I have yet to code the rest of it
 
