@@ -24,17 +24,19 @@ This requires Adobe Photoshop. Other imaging editing tools will probably work, i
 #### Go up one folder, then open a terminal there (click on the directory bar and type ```cmd```)
 ![image](https://user-images.githubusercontent.com/64732379/161355142-a518f5a7-4751-4763-baeb-31ba7cb137db.png)
 #### Run the command ```node standalone```, if it went successfully should look like the following:
-![image](https://user-images.githubusercontent.com/64732379/161355206-b885dc09-6eb3-422e-bdd8-e505eceeca16.png)
+![image](https://user-images.githubusercontent.com/64732379/161355206-b885dc09-6eb3-422e-bdd8-e505eceeca16.png) <br/>
 If there is an error check picture file name is ```picture.jpeg```, or ask around.
 #### In the output folder, grab the ```ImagesData.cpp``` file and move it to the (root directory) -> Images - Processed -> HEX. Rename if you like.
 ![image](https://user-images.githubusercontent.com/64732379/161355527-996bf39c-38e3-4c84-90f2-736b9630625d.png)
+->
+![image](https://user-images.githubusercontent.com/64732379/161356076-cffbf531-9b9e-431e-8976-51d31c1dd540.png)
 #### In the Arduino IDE (linked at bottom), go to the tab Sketch -> Add file, then add the .cpp file you just made.
 ![image](https://user-images.githubusercontent.com/64732379/161355614-542cc6cf-f293-4ddb-80a1-f425a8ccfea1.png)
 It should appear as a tab.
-#### In the picture.cpp (or whatever you called it) tab, change the ```Picture``` in ```const unsigned char Picture[]``` to something that makes sense.
+#### In the picture.cpp (or whatever you called it) tab, change the ```Picture``` in ```const unsigned char Picture[]``` to something that makes sense. <br/>
 ![image](https://user-images.githubusercontent.com/64732379/161355725-ba1aacc4-79b2-44fa-b6e3-64b49d1b3ca3.png)
-->
-![image](https://user-images.githubusercontent.com/64732379/161355736-d97c889d-c7a3-46ba-8300-a364196e6b08.png)
+-> <br/>
+![image](https://user-images.githubusercontent.com/64732379/161356025-cbaf47d7-571b-4aaa-af4b-e42e9e307f35.png)
 #### Then in the ImagesData**.h** tab, add ```extern const unsigned char (YourPictureName)[];```
 ![image](https://user-images.githubusercontent.com/64732379/161355862-e838c984-24f0-4ade-8a27-8a003d29c4c9.png)
 #### If you are reading this then I have yet to code the rest of it
