@@ -4,9 +4,9 @@
 #include "GUI_Paint.h"
 #include "ImagesData.h"
 #include <stdlib.h>
-UBYTE *BlackImage;
-const int NextSlideDelay = 10000;
 
+const int NextSlideDelay = 10; // in seconds
+UBYTE *BlackImage;
  
  
 /* Entry point ----------------------------------------------------------------*/
@@ -52,14 +52,20 @@ void loop()
   printf("show image for array\r\n");
   Paint_SelectImage(BlackImage);
   Paint_Clear(WHITE);
+  
   Paint_DrawBitMap(ShrekImg);
-  
   EPD_5IN83_V2_Display(BlackImage);
-  delay(NextSlideDelay);
-
+  delay(NextSlideDelay * 1000);
+  //EPD_5IN83_V2_Sleep();
+  
   Paint_DrawBitMap(UnionJack);
-  
   EPD_5IN83_V2_Display(BlackImage);
-  delay(NextSlideDelay);
+  delay(NextSlideDelay * 1000);
+  //EPD_5IN83_V2_Sleep();
+
+  Paint_DrawBitMap(Arduino);
+  EPD_5IN83_V2_Display(BlackImage);
+  delay(NextSlideDelay * 1000);
+ // EPD_5IN83_V2_Sleep();
 
 }

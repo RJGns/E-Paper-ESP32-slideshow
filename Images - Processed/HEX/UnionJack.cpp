@@ -1,9 +1,9 @@
 // Proceduraly generated file, please do not edit it directly!
 
 #include "ImagesData.h"
-#include <avr/pgmspace.h>
 
-const unsigned char Picture[] PROGMEM = {
+
+const unsigned char UnionJack[] {
 	0XFF, 0XFF, 0XFF, 0XFF, 0XFF, 0XFF, 0XFF, 0XFF,
 	0XFF, 0X80, 0X00, 0X00, 0X00, 0X00, 0X00, 0X00,
 	0X00, 0X00, 0X00, 0X00, 0X00, 0X00, 0X00, 0X00,
