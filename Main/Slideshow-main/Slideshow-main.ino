@@ -8,7 +8,7 @@
 /*Config ----------------------------------------------------------------------*/
 const unsigned char *ImageArray[] = {Arduino,ShrekImg,UnionJack};
 const int NumberOfImages = 3;
-const int NextSlideDelay = 60; // in seconds
+const int NextSlideDelay = 5; // in seconds
 //Highlight this ->  REPLACE_WITH_YOUR_DISPLAY then press CRTL-F or CMD-F
 
 /*Declarations ----------------------------------------------------------------*/
@@ -38,7 +38,7 @@ void loop()
   //Loop through ImageArray, then wait for NextSlideDelay, then repeat.
   for (int i = 0; i <= NumberOfImages; i++) {   
      Paint_DrawBitMap(ImageArray[i]);
-     REPLACE_WITH_YOUR_DISPLA_Display(BlackImage);
+     REPLACE_WITH_YOUR_DISPLAY_Display(BlackImage);
      delay(NextSlideDelay * 1000);
   }
 }
