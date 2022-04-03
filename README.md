@@ -1,5 +1,6 @@
 # E-Paper-ESP32-slideshow
 A simple Arduino program to cycle through images over SPI on an ESP32 microcontroller. Uses an E-paper display and ESP32 E-paper driver board from Waveshare. This project will only work with this board as it uses libraries from Waveshare to function. Based on a modified example from Waveshare. [Also includes a JPEG to HEX converter specifically for this product line.](https://github.com/Wh1teRabbitHU/ImageToEpaperConverter) Converter was not made by me, credit goes to [WhiteRabbit](https://github.com/Wh1teRabbitHU).
+<br/>This will likely only work with the [board](https://www.waveshare.com/product/displays/e-paper/driver-boards/e-paper-esp32-driver-board.htm) I am using.
 ## Set-up
 ### Applying dithering and re-scaling
 This requires Adobe Photoshop. Other imaging editing tools will probably work, it's just what I used. All it's needed for is to change the resolution to your screen size and set the colour table for dithering purposes.
@@ -51,5 +52,19 @@ It should appear as a tab.
 #### Change ```NextSlideDelay``` to the amount of time inbetween slides, in seconds
 ![image](https://user-images.githubusercontent.com/64732379/161408787-bae818fd-d4c2-458e-9c7e-727cf5b4f5c8.png)
 #### Done!
-## [Useful links](Tools%20and%20Links/README.md)
-## [Display Codes](DISPLAY.md)
+## Troubleshooting
+### If error is something about ```#include "DEV_Config.h"``` does not exist or something
+#### Import needed libraries from Waveshare
+#### or add ```E-Paper-ESP32-slideshow\Tools and Links\E-Paper_ESP32_Driver_Board_Code\examples\esp32-waveshare-epd``` to ``` (YOUR_ARDUINO_SKETCHBOOK_DIRECTORY)/libraries```
+### Image doesn't look right
+#### Try a differnet display code
+####  Flick the number 2 DIP switch on your board to the other position
+#### Re-do photoshop steps, maybe you set the wrong resolution
+### I have a colour display, but this isn't colour
+#### Make sure you used the right colour table in the Photoshop steps
+#### I don't have a colour display to test to see if that works, are you sure you bought a colour display?
+
+
+### [Useful links](Tools%20and%20Links/README.md)
+### [Display Codes](DISPLAY.md)
+### [Demo Photo Frame](https://youtu.be/OXD3FgrKEKg)
