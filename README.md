@@ -50,9 +50,6 @@ It should appear as a tab.
 ![image](https://user-images.githubusercontent.com/64732379/161408769-1706167e-6a7a-43f7-8498-50f1ad36ebc1.png)
 #### Change ```NextSlideDelay``` to the amount of time inbetween slides, in seconds
 ![image](https://user-images.githubusercontent.com/64732379/161408787-bae818fd-d4c2-458e-9c7e-727cf5b4f5c8.png)
-
-
-
-
-
+#### Done!
 ## [Useful links](Tools%20and%20Links/README.md)
+## [Display Codes](DISPLAY.md)
