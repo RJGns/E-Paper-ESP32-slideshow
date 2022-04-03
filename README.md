@@ -39,7 +39,18 @@ It should appear as a tab.
 ![image](https://user-images.githubusercontent.com/64732379/161356025-cbaf47d7-571b-4aaa-af4b-e42e9e307f35.png)
 #### Then in the ImagesData **.h** tab, add ```extern const unsigned char (YourPictureName)[];```
 ![image](https://user-images.githubusercontent.com/64732379/161355862-e838c984-24f0-4ade-8a27-8a003d29c4c9.png)
-#### If you are reading this then I have yet to code the rest of it
+### Configuring to your liking
+#### In the main tab, highlight ```REPLACE_WITH_YOUR_DISPLAY``` (anywhere in the code) and press CRTL-F or CMD-F
+![image](https://user-images.githubusercontent.com/64732379/161408658-ff209ed6-3c3d-462b-b744-adf1915e057c.png)<br/>
+#### In the "Replace with:" box add your display code (will add list later), then press "Replace All"
+![image](https://user-images.githubusercontent.com/64732379/161408683-ffbe691a-6754-449b-90e6-10aa2064f7fd.png)
+#### Change ```{Arduino,ShrekImg,UnionJack}``` to the names of your pictures as in [this](https://github.com/RJGns/E-Paper-ESP32-slideshow/edit/main/README.md#in-the-picturecpp-or-whatever-you-called-it-tab-change-the-picture-in-const-unsigned-char-picture-to-something-that-makes-sense-), seperated by a comma
+![image](https://user-images.githubusercontent.com/64732379/161408760-a63bd1b0-830d-437d-98bd-dca623d8f786.png)
+#### Change ```NumberOfImages``` to the number of images you want to cycle through
+![image](https://user-images.githubusercontent.com/64732379/161408769-1706167e-6a7a-43f7-8498-50f1ad36ebc1.png)
+#### Change ```NextSlideDelay``` to the amount of time inbetween slides, in seconds
+![image](https://user-images.githubusercontent.com/64732379/161408787-bae818fd-d4c2-458e-9c7e-727cf5b4f5c8.png)
+
 
 
 
