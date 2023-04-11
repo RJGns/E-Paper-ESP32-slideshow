@@ -2,7 +2,8 @@
 A simple Arduino program to cycle through images over SPI on an ESP32 microcontroller. Uses an E-paper display and ESP32 E-paper driver board from Waveshare. This project will only work with this board as it uses libraries from Waveshare to function. Based on a modified example from Waveshare. [Also includes a JPEG to HEX converter specifically for this product line.](https://github.com/Wh1teRabbitHU/ImageToEpaperConverter) Converter was not made by me, credit goes to [WhiteRabbit](https://github.com/Wh1teRabbitHU).
 <br/>This will likely only work with the [board](https://www.waveshare.com/product/displays/e-paper/driver-boards/e-paper-esp32-driver-board.htm) I am using.
 ## Set-up
-### Applying dithering and re-scaling
+### Applying dithering and re-scaling or use [didder](https://github.com/makew0rld/didder)
+Didder example command (B/W) `didder -i "*.jpg" -o "M:\Media\Downloads" --palette "black white" --recolor "black white" -x 648 -y 480 -s 80% -g edm --serpentine FloydSteinberg`
 This requires Adobe Photoshop. Other imaging editing tools will probably work, it's just what I used. All it's needed for is to change the resolution to your screen size and set the colour table for dithering purposes.
 #### Import image, then File -> Export -> Save for Web (Legacy)
 ![image](https://user-images.githubusercontent.com/64732379/161347063-66d2c573-0c0a-45e0-aea9-8d1b31fece0d.png)
